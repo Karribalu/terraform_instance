@@ -1,10 +1,42 @@
 Started by user admin
 Running as SYSTEM
 Building in workspace /var/lib/jenkins/workspace/install-docker
-[install-docker] $ /bin/sh -xe /tmp/jenkins16609463480041864683.sh
+[install-docker] $ /bin/sh -xe /tmp/jenkins14627447037585993020.sh
 SSH: Connecting from host [ip-10-0-1-221]
-SSH: Connecting with configuration [docker-instance] ...
-SSH: EXEC: completed after 13,810 ms
-SSH: Disconnecting configuration [docker-instance] ...
+SSH: Connecting with configuration [ansible-instance] ...
+SSH: Creating session: username [ansible], hostname [10.0.1.31], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening SFTP channel ...
+SSH: SFTP channel open
+SSH: Connecting SFTP channel ...
+SSH: Connected
+SSH: Remote root is not absolute, getting absolute directory from PWD
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [ansible-playbook install-docker.yaml] ...
+SSH: EXEC: connected
+
+PLAY [10.0.1.165] **************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.0.1.165]
+
+TASK [apt update] **************************************************************
+changed: [10.0.1.165]
+[WARNING]: Consider using 'become', 'become_method', and 'become_user' rather
+than running sudo
+
+TASK [install docker] **********************************************************
+changed: [10.0.1.165]
+
+TASK [start docker service] ****************************************************
+ok: [10.0.1.165]
+
+PLAY RECAP *********************************************************************
+10.0.1.165                 : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+SSH: EXEC: completed after 15,614 ms
+SSH: Disconnecting configuration [ansible-instance] ...
 SSH: Transferred 0 file(s)
 Finished: SUCCESS
