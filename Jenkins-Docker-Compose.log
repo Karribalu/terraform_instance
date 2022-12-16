@@ -1,9 +1,28 @@
 Started by user admin
 Running as SYSTEM
 Building in workspace /var/lib/jenkins/workspace/call-docker-compose
-SSH: Connecting from host [jenkins]
+SSH: Connecting from host [ip-10-0-1-221]
 SSH: Connecting with configuration [docker-instance] ...
-SSH: EXEC: completed after 1,801 ms
+SSH: Creating session: username [ansible], hostname [10.0.1.165], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening SFTP channel ...
+SSH: SFTP channel open
+SSH: Connecting SFTP channel ...
+SSH: Connected
+SSH: Remote root is not absolute, getting absolute directory from PWD
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [IMAGE_NAME=nginx CON_PORT=80 docker-compose -f docker-compose-container.yaml up -d] ...
+SSH: EXEC: connected
+Creating network "ansible_default" with the default driver
+Pulling myapp (nginx:)...
+latest: Pulling from library/nginx
+Digest: sha256:75263be7e5846fc69cb6c42553ff9c93d653d769b94917dbda71d42d3f3c00d3
+Status: Downloaded newer image for nginx:latest
+Creating ansible_myapp_1 ... 
+Creating ansible_myapp_1 ... done
+SSH: EXEC: completed after 4,410 ms
 SSH: Disconnecting configuration [docker-instance] ...
 SSH: Transferred 0 file(s)
 Build step 'Send files or execute commands over SSH' changed build result to SUCCESS

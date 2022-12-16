@@ -9,6 +9,10 @@
      command:
        cmd: sudo apt install docker.io -y
 
+   - name: install docker-compose
+     command:
+       cmd: sudo apt install docker-compose -y
+
    - name: start docker service
      service:
        name: docker
