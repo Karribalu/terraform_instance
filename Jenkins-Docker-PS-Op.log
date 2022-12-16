@@ -1,0 +1,29 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/docker-ps-output
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [docker-instance] ...
+SSH: Creating session: username [ansible], hostname [10.0.1.165], port [22]
+SSH: Connecting session ...
+SSH: Connected
+SSH: Opening SFTP channel ...
+SSH: SFTP channel open
+SSH: Connecting SFTP channel ...
+SSH: Connected
+SSH: Remote root is not absolute, getting absolute directory from PWD
+SSH: Opening exec channel ...
+SSH: EXEC: channel open
+SSH: EXEC: STDOUT/STDERR from command [docker ps -a] ...
+SSH: EXEC: connected
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS                       PORTS                               NAMES
+a22a4ca22ed8   nginx          "/docker-entrypoint.…"   3 minutes ago   Exited (127) 3 minutes ago                                       magical_sammet
+d9d4ee002295   nginx          "/docker-entrypoint.…"   4 minutes ago   Exited (0) 4 minutes ago                                         crazy_goldstine
+83ee3012f67d   nginx          "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes                 0.0.0.0:80->80/tcp, :::80->80/tcp   ansible_myapp_1
+740e4855512e   3964ce7b8458   "/docker-entrypoint.…"   2 hours ago     Exited (0) 2 hours ago                                           hardcore_cannon
+283d48aec1bc   3964ce7b8458   "/docker-entrypoint.…"   2 hours ago     Exited (127) 2 hours ago                                         flamboyant_galois
+63ac38780e88   3964ce7b8458   "/docker-entrypoint.…"   2 hours ago     Exited (0) 2 hours ago                                           epic_joliot
+SSH: EXEC: completed after 200 ms
+SSH: Disconnecting configuration [docker-instance] ...
+SSH: Transferred 0 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+Finished: SUCCESS

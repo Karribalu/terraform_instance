@@ -1,0 +1,15 @@
+---
+- hosts: 10.0.1.165
+  tasks:
+   - name: apt update
+     command:
+       cmd: sudo apt update
+
+   - name: install docker
+     command:
+       cmd: sudo apt install docker.io -y
+
+   - name: start docker service
+     service:
+       name: docker
+       state: started

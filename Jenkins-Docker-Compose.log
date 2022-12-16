@@ -1,0 +1,10 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/call-docker-compose
+SSH: Connecting from host [jenkins]
+SSH: Connecting with configuration [docker-instance] ...
+SSH: EXEC: completed after 1,801 ms
+SSH: Disconnecting configuration [docker-instance] ...
+SSH: Transferred 0 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+Finished: SUCCESS

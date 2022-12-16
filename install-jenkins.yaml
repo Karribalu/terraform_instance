@@ -1,0 +1,21 @@
+---
+- hosts: 10.0.1.221
+  tasks:
+   - name: ensure the jenkins apt repository key is installed
+     apt_key: url=https://pkg.jenkins.io/debian-stable/jenkins.io.key state=present
+     become: yes
+
+   - name: install jdk
+     command:
+       cmd: sudo apt install openjdk-11-jre -y
+
+
+   - name: ensure the repository is configured
+     apt_repository: repo='deb https://pkg.jenkins.io/debian-stable binary/' state=present
+     become: yes
+
+
+
+   - name: ensure jenkins is installed
+     apt: name=jenkins update_cache=yes
+     become: yes

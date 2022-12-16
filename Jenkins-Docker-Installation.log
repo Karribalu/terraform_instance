@@ -1,0 +1,10 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/install-docker
+[install-docker] $ /bin/sh -xe /tmp/jenkins16609463480041864683.sh
+SSH: Connecting from host [ip-10-0-1-221]
+SSH: Connecting with configuration [docker-instance] ...
+SSH: EXEC: completed after 13,810 ms
+SSH: Disconnecting configuration [docker-instance] ...
+SSH: Transferred 0 file(s)
+Finished: SUCCESS

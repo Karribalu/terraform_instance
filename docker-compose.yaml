@@ -1,0 +1,6 @@
+version: "3"
+services:
+    myapp:
+      image: $IMAGE_NAME
+      ports:
+        - ${CON_PORT}:80
